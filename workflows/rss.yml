@@ -3,6 +3,8 @@ on:
     url:
       - https://jiashejianyan.com/rss/
       - https://rsshub.app/zhubai/shyrz
+      - https://rsshub.app/zhubai/decohack
+      - https://stay-bullish.com/rss/
 jobs:
   request:
     name: Make a HTTP Request
