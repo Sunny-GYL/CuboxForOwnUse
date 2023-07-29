@@ -11,11 +11,12 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: ${{apikey}}
+          url: ${{ secrets.apikey }}
           method: POST
           body: |
             {
               "type":"url",
+              "description":${{ on.rss.outputs.content }},
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "folder":"邮箱订阅"
