@@ -7,6 +7,7 @@ on:
       - https://stay-bullish.com/rss/
       - https://wangyurui.com/feed.xml
       - https://rsshub.app/zhubai/discovery
+      - https://invisible.school/rss/
 jobs:
   request:
     name: Make a HTTP Request
