@@ -6,6 +6,7 @@ on:
       - https://rsshub.app/zhubai/decohack
       - https://stay-bullish.com/rss/
       - https://wangyurui.com/feed.xml
+      - https://rsshub.app/zhubai/discovery
 jobs:
   request:
     name: Make a HTTP Request
@@ -19,7 +20,6 @@ jobs:
           body: |
             {
               "type":"url",
-              "description":${{ on.rss.outputs.contentSnippet }},
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "folder":"邮箱订阅"
